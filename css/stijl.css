@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 1000px;
+    float: left;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+@media screen and (max-width:768px){
+    section{
+        width: 100%;
+        height: 768px;
+        float: left;
+    }
+
+}
+
+/* MENU */
+.header{
+    height: 100px;
+    padding: 0 20px;
+    color: black;
+}
+
+.logo{
+    /* line-height: 100px;
+    float: left; */
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.menu{
+    float: right;
+    line-height: 100px; 
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s; 
+}
+
+.show-menu-btn, .hide-menu-btn{
+    transition: 0.4s;
+    font-weight: 400;
+    cursor: pointer;
+    display: none;  
+}
+
+.show-menu-btn{
+    float: right;  
+}
+
+.show-menu-btn i{
+    line-height: 100px;  
+}
+
+.menu a:hover{
+    border-bottom: 3px solid #DA1B83;    
+}
+
+.menu a:hover, 
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+    color: #05529d;    
+}
+
+#checkbox{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+@media screen and (max-width:768px){
+    .show-menu-btn, .hide-menu-btn{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:  #BACFE4;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+        z-index: 9999;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .hide-menu-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #checkbox:checked ~ .menu{
+        right: 0;
+    }
+
+    .menu a:hover{
+        border-bottom: 3px solid #DA1B83; 
+    }
+}
+
+/* Homepage */
+
+.achtergrond-homepage{
+    background-image: url(../media/achtergrond.svg);
+    background-color: #fefefe;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 72px;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 70%;
+    padding-left: 10%;
+    margin-left: 10%;
+}
+
+a.button{
+    display: inline-block;
+    padding:0.3em 1.2em;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight:700;
+    font-size: 24px;
+    color:#FFFFFF;
+    background-color:#05529d;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.button:hover{
+    background-color:#DA1B83;
+}
+
+.knop{
+    text-align: center;
+    margin: 20px
+}
+/* @media screen and (max-width:1024px){
+    .achtergrond-homepage{
+        background: url(media/3illustratie.svg) no-repeat 50% 30%;
+        background-color: #BACFE4;
+    } */
+/* @media screen and (max-width:2560px){
+    .achtergrond-homepage{
+        background: url(media/3illustratie.svg) no-repeat 50% 28%;            background-color: #BACFE4;
+    }
+} */
+@media screen and (max-width:1000px){
+    .achtergrond-homepage{
+        background: url(../media/achtergrond.svg) no-repeat 50% 24%;
+        background-color: #BACFE4;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 14px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        width: 90%;
+        margin-left: 5%;
+        padding: 2px;
+    }
+
+    a.button3{
+        display: block;
+        margin: 0.2em auto;
+    }
+    
+    a.button{
+        font-size: 20px;
+    }
+}
+
+/* AFBEELDINGEN DELTAS */
+
+.deltas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 10px;
+
+}
+
+.deltas>div{
+    overflow: hidden;
+    position: relative;
+    /* height: 800px; */
+    text-align: center;
+    margin-top: 132px;
+    padding: 5px;
+    /* margin-right: 300px; */
+
+    /* margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 20px; */
+}
+
+#delta{
+    background-color: #BACFE4;
+}
+
+/* .keuze{
+    margin-top: -50px;
+} */
+
+.delta1{
+    height: 90%;
+    width: 100%;
+}
+
+.delta2{
+    height: 90%;
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .deltas{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 5px;
+    }
+
+    .deltas>div {
+        margin: 2%;
+        margin-left: 0.5%;
+    }
+
+    /* .keuze{
+        margin: 5%;
+        margin-top: 10px;
+    } */
+
+    .delta1{
+        height: auto;
+        max-width: 100%;
+    }
+
+    .delta2{
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* Footer */
+footer{
+    margin-top: 2000px;
+    background-color: #BACFE4;
+}
+/* BRONNEN */
+.bronnen p{
+    text-align: justify;
+}
+.bronnen{
+    text-decoration: none;
+    color: black;
+
+}
+
+.vergelijking{
+    margin-top: 0px;
+    background-color: #fefefe;
+}
+
+.footer-tekst{
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+}
+
+.footer-tekst1{
+    margin-block-start: 0.5px;
+    margin-block-end: 0.5px;
+    text-align: center;
+    font-size: 11px;
+}
+
+@media screen and (max-width:768px){
+    footer{
+        /* margin: 5%; */
+        font-size: 10px;
+        /* margin-top: 1700px; */
+    }
+
+    .bronnen{
+        text-decoration: none;
+        color: black;
+    }
+
+    .footer-tekst{
+        margin-block-start: 0.5px;
+        margin-block-end: 0.5px;
+    }
+}
+
+                                /* VERGELIJKING */
+.intro-vergelijking{
+    text-align: center;
+}
+                                
+.vergelijkingstabel{
+    overflow-x: auto;
+}
+                                
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid red; */
+    font-size: 18px;
+}
+                                  
+th:first-child, td:first-child {
+    text-align: center;
+}
+                                  
+tr:nth-child(even) {
+    background-color: #BACFE4;
+}
+                                
+.locatie-icon, .lengte-icon, .steden-icon, .delta-icon{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+                                
+.weer-icon{
+    object-fit: cover;
+    width: 100px;
+    height: 120px;
+}
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+  
