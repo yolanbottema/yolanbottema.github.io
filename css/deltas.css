@@ -567,6 +567,27 @@ h2{
   
 }
 
+/* Stedelijke ontwikkeling */
+
+.stedelijke-ontwikkeling-tekst-parana{
+    text-align: justify;
+    margin-left: 10%;
+    padding: 1%;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width:768px){
+    .ecologie-tekst-parana{
+        text-align: left;
+        margin-left: 5%;
+        margin: 2%;
+        margin-top: 10px;
+        width: 95%;
+    }
+  
+}
+
 /* Footer */
 footer{
     /* margin-top: 2000px; */
@@ -628,4 +649,13 @@ s
         width: 100%;
         height: 100%;
     }
+} */
+
+/* #datawrapper-chart-g1sWk{
+    width: 570px; 
+    max-width: 100% !important; 
+    border: none;
+    height: 637px;
+    margin-left: 5%;
+    padding: 1%;
 } */
