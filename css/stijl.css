@@ -470,6 +470,19 @@ tr:nth-child(even) {
     margin-top: 5%;
 }
 
+.socialmedia{
+text-align: center;
+}
+.fab{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10%;
+}
+
 @media screen and (max-width:768px){
     .overmij{
         display: grid;
