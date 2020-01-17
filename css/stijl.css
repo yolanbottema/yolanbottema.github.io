@@ -309,6 +309,21 @@ a.button:hover{
     }
 }
 
+/* QUIZ */
+
+.quiz{
+text-align: center;
+height: 1200px;
+}
+
+@media screen and (max-width:768px){
+    .quiz{
+        text-align: center;
+        height: 700px;
+        width: 100%;
+    }
+}
+
 /* Footer */
 footer{
     margin-top: 2000px;
@@ -316,7 +331,7 @@ footer{
 }
 /* BRONNEN */
 .bronnen p{
-    text-align: justify;
+    text-align: left;
 }
 .bronnen{
     text-decoration: none;
@@ -375,13 +390,36 @@ table {
     /* border: 1px solid red; */
 }
 
-th, td {
+th{
     text-align: center;
     padding: 10px;
     /* border: 1px solid red; */
-    font-size: 18px;
+    font-size: 24px;
 }
-                                  
+
+td {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* td p{
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 10%;
+    border: 1px solid red;
+} */
+ 
+.lijst p{
+    font-size: 24px;
+    text-align: center;
+}
+
 th:first-child, td:first-child {
     text-align: center;
 }
@@ -392,14 +430,16 @@ tr:nth-child(even) {
                                 
 .locatie-icon, .lengte-icon, .steden-icon, .delta-icon{
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
 }
                                 
 .weer-icon{
     object-fit: cover;
-    width: 100px;
-    height: 120px;
+    width: 150px;
+    height: 165px;
+    margin: 10px;
 }
 
 

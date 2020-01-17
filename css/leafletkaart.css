@@ -56,6 +56,11 @@
     width: 100%; 
 }
 
+#chongming{
+    height: 95%;
+    max-width: 90%;
+}
+
 .embed-container {
     position: relative; 
     padding-bottom: 79%; 
@@ -99,6 +104,10 @@ small{
         max-width: 95.5vw;
     }
     
+    #chongming{
+        height: 50vh;
+        max-width: 95.5vw;
+    }
 
     .legenda {
         padding: 6px 8px;

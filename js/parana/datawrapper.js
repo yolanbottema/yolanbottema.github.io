@@ -1,5 +1,5 @@
-!function()
-{"use strict";
+!function(){
+    "use strict";
 window.addEventListener("message",function(a){
     if(void 0!==a.data["datawrapper-height"])
     for(var e in a.data["datawrapper-height"]){
