@@ -473,14 +473,14 @@ tr:nth-child(even) {
 .socialmedia{
 text-align: center;
 }
-.fab{
+.fab, .fas{
     padding: 10px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     color: black;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
 @media screen and (max-width:768px){
