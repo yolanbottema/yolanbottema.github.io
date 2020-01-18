@@ -461,6 +461,17 @@ tr:nth-child(even) {
     width: 30%;
     margin-bottom: 3%;
 }
+
+@media screen and (max-width:768px){
+    .ba-viz{
+        margin-top: 17%;
+    }
+
+    .titel{
+        text-align: center;
+        margin-left: 15%;
+    }
+}
 /* OVER */
 
 .overmij{
