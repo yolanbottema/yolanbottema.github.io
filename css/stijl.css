@@ -442,6 +442,25 @@ tr:nth-child(even) {
     margin: 10px;
 }
 
+.yangtze-viz{
+    height: 50px;
+    width: 100px;
+}
+
+.sh-viz{
+    height: 50%;
+    width: 50%;
+}
+.parana-viz{
+    height: 45px;
+    width: 100px;
+}
+
+.ba-viz{
+    height: 30%;
+    width: 30%;
+    margin-bottom: 3%;
+}
 /* OVER */
 
 .overmij{
