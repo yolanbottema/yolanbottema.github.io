@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Informatie over de Paraná delta">
+    <meta name="keywords" content="paraná, buenos aires, delta, estuarium, wetland, klimaat, ecologie, rivier, argentinië, biodiversiteit, urban, geomorfologie, stedelijk, sudestada, ecosysteem, ceibo, asentamientos">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/deltas.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- menu -->
+    <script src="https://kit.fontawesome.com/ea176faa6e.js" crossorigin="anonymous"></script>
+    <!-- leaflet -->
+    <link rel="stylesheet" href="css/leafletkaart.css">
+    <script src="js/parana/paranapavon.js" type="text/javascript"></script>
+    <script src="js/parana/paranadelaspalmas.js" type="text/javascript"></script>
+    <script src="js/parana/parana-ibicuy.js" type="text/javascript"></script>
+    <script src="js/parana/paranaguazu.js" type="text/javascript"></script>
+    <script src="js/parana/paranamini.js" type="text/javascript"></script>
+    <script src="js/parana/paranarivier.js" type="text/javascript"></script>
+    <script src="js/parana/paranadeltashp.js" type="text/javascript"></script>
+    <script src="js/parana/paranadeltashp2.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <title>Paraná delta</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img class="logo" src="media/logo2.svg" alt="logo" /></a>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <!-- MENU -->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yangtzedelta.html">Yangtze</a></li>
+            <li><a href="paranadelta.html">Paraná</a></li>
+            <li><a href="vergelijking.html">Vergelijking</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="over.html">Over</a></li>
+            <label for="checkbox" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </div>
+
+    <div class="banner-parana">
+        <img class="bannerparana" src="media/bannerparana.svg" alt="Banner van de Paraná">
+    </div>
+
+    <!-- Introductie Parana -->
+    <div class="intro-tekst-parana">
+        <h2 class="titel-intro">De Paraná rivier</h2>
+        <p class="tekst-intro">
+            De Paraná rivier loopt door Brazilië, Argentinië en Paraguay. In het Spaans wordt de
+            rivier Río Paraná genoemd en in het Portugees Rio Paraná. De rivier is 2570 kilometer lang en een van de
+            belangrijkste rivieren van Zuid-Amerika. De Paraná begint op de plek waar de rivieren Rio Grande en Rio
+            Paranaíba samenkomen. Dit is in het zuiden van Brazilië. De Paraná rivier vormt een natuurlijke grens tussen
+            Paraguay en Brazilië. Verder stroomafwaarts voegt ook de rivier Iguaçu zich toe aan de Paraná. Nog verder
+            stroomafwaarts mond ook de rivier Paraguay uit in de Paraná. Uiteindelijk vloeit de Paraná samen met de
+            rivier Uruguay. Samen vormen ze het estuarium Río de la Plata.
+        </p>
+        <p>
+            Aan de Paraná rivier liggen enkele grote steden zoals Rosario en Buenos Aires.
+        </p>
+    </div>
+    <div class="introductie-parana">
+        <div class="kaart-rivier-parana">
+            <img class="kaart-parana" src="media/kaartparana.svg"
+                alt="overzichtskaart met Paraná rivier, Argentinë en omliggende landen">
+        </div>
+
+        <!-- Leaflet kaart -->
+        <div class="leaflet-parana" id="parana-rivier">
+            <script src="js/parana/leaflet-parana.js" type="text/javascript"></script>
+        </div>
+    </div>
+
+
+    <!-- Delta -->
+    <div class="de-parana-delta">
+        <h2 class="deparanadelta">De Paraná delta</h2>
+        <p>
+            De trechtervormige overgang tussen de Paraná rivier en het estuarium van Río de la Plata, is de Paraná
+            delta. De delta is een complex estuarium model. Dit komt omdat de rivier zijn sediment niet direct loost in
+            de zee, zoals de meeste delta’s doen, maar via het estuarium Río de la Plata. Een <b>delta</b> is een
+            stelsel van
+            aftakkingen van een rivier die uitmondt in een zee of een meer. Naast het water, wordt er ook sediment (zand
+            en klei) meegenomen. Een <b>estuarium</b> is een brede en meestal trechtervormige monding van een rivier.
+            Hierbij
+            wordt het zoete water van de rivier gemengd met het zoute water van de zee, waardoor er brak water ontstaat.
+        </p>
+        <p>
+            De delta begint zich te vormen tussen de steden Santa Fe en Rosario en loopt door drie provincies: Buenos
+            Aires, Santa Fe and Entre Rios. Aan de bovenkant is de delta ongeveer 18 kilometer breed en aan de onderkant
+            ongeveer 65 kilometer breed. De delta is ongeveer 320 kilometer lang en bestrijkt een gebied van 14.000
+            km<sup>2</sup>.
+            De Paraná rivier heeft een afvoer van 18.000 m<sup>3</sup>/sec, tijdens overstromingen kan deze waarde
+            oplopen tot meer
+            dan 50.000 m<sup>3</sup>/sec. De rivier vervoert ongeveer 160 miljoen ton sediment per jaar naar de monding.
+            Van deze
+            160 miljoen ton sediment is 56% slib, 28% klei en 16% zand. Het zand wat terecht komt in de monding van de
+            rivier zorgt er voor dat de delta langer wordt. Het slib die ophoopt zorgt voor toename in de hoogte in de
+            vorm van oevers. Deze oevers worden omgevormd tot eilanden. In de periode 1750-2010 is de oppervlakte van de
+            delta met gemiddeld 617 km<sup>2</sup>/jaar toegenomen. De verwachting is dat de delta Buenos Aires bereikt
+            in ongeveer
+            110 jaar.
+        </p>
+        <p>
+            Binnen de delta vertakt de rivier zich, hiervan zijn de Paraná Guazú en de Parana de las Palmas de
+            belangrijkste aftakkingen van de rivier.
+        </p>
+        <p>
+            De delta kan worden verdeeld in drie delen:
+        </p>
+        <p><b>- Boven:</b> deze loopt van de Diamante – Puerto Gaboto lijn tot Villa Constitución;</p>
+        <p><b>- Midden:</b> deze loopt van Villa Constitución tot de Ibicuy eilanden;</p>
+        <p><b>- Onder:</b> deze loopt van de Ibicuy eilanden tot de riviermonding.</p>
+        <p>
+            De Paraná delta is onderdeel van een groot systeem, dat niet alleen voor de regio belangrijk is, maar voor
+            heel Zuid-Amerika van belang is op het gebied van hydrologie, natuurlijke hulpbronnen en economische
+            ontwikkeling.
+        </p>
+        <p>
+            In onderstaande kaart is een deel van de Paraná delta te zien en de belangrijkste aftakkingen van de rivier.
+            In de andere afbeelding is te zien hoeveel de delta zal aangroeien in de aankomende jaren.
+        </p>
+
+    </div>
+    <div class="delta-fotos">
+        <div class="uitbreiding-delta">
+            <img class="uitbreiding-delta-foto" src="media/uitbreiding-delta.png"
+                alt="illustratie waarin de uitbrreiding van de delta te zien is">
+        </div>
+        <div class="leaflet-deltagebied" id="deltagebied">
+            <script src="js/parana/leaflet-aftakkingen.js" type="text/javascript"></script>
+        </div>
+    </div>
+
+    <!-- Klimaat -->
+    <div class="klimaat-tekst-parana">
+        <h2 class="klimaatparana">Klimaat</h2>
+        <p>
+            De Paraná delta heeft net als de Yangtze delta een subtropisch vochtig klimaat. Dit klimaat komt veel voor
+            in Zuid-Amerika. Buenos Aires heeft daardoor te maken met een subtropisch vochtig klimaat. Dit uit zich in
+            warme en vochtige zomers en milde tot koude winters. Ook hier valt over het algemeen veel neerslag (zie
+            grafiek). De minste neerslag valt in zomermaanden. In de klimaatclassificatie van Köppen wordt het ook wel
+            een Cfa klimaat genoemd. Cfa staat voor een vochtig subtropisch klimaat.
+        </p>
+        <h3>Klimaat in de Paraná delta</h3>
+        <p>
+            In het gebied van de Paraná delta zelf, heerst er een iets ander klimaat dan in Buenos Aires. Dit komt omdat
+            het land erg laag ligt en er veel water aanwezig is. In de delta zijn de nachten echter iets kouder dan in
+            de rest van de Pampas. De Pampas is een regio in Zuid-Amerika die voornamelijk bestaat uit natuurlijk
+            grasland. Ook zijn de winters wat milder en is de luchtvochtigheid er hoger. Hierdoor kunnen sommige dier-
+            en plantsoorten die beter gedijen in warm weer, zich hier vestigen. De zomers in de delta zijn heet en vaak
+            broeierig.
+        </p>
+    </div>
+
+    <div class="klimaat-fotos">
+        <div class="chart-container">
+            <canvas id="chart">
+                <script src="js/parana/grafiek-klimaat-parana.js"></script>
+            </canvas>
+        </div>
+        <div class="kaart-klimaat-parana">
+            <img class="klimaat-parana" src="media/koppenparana.svg"
+                alt="overzichtskaart van Argentinië met de klimaatclassificatie van Köppen">
+        </div>
+    </div>
+
+    <!-- Geomorfologie -->
+    <div class="geomorfologie-tekst-parana">
+        <h2 class="geomorfologie-parana">Geomorfologie</h2>
+        <p>
+            De Paraná delta is gevormd in een complexe kuststreek die zich met name in de afgelopen 6000 jaar BP (Before
+            Present) heeft ontwikkeld. Sommige processen vonden al plaats tijdens het laat-Pleistoceen en het vroege
+            Holoceen. De Paraná delta is een jong gebied met een evenwicht tussen erosie- en sedimentatieprocessen, deze
+            worden beïnvloed door zoetwatergetijden en zuidoostelijke winden (Sudestada). De randen van de delta zijn
+            oude gronden, terwijl de delta zelf een jong gebied is. Deze is in de loop der tijd gevormd door de accumulatie
+            van sedimenten die afkomstig zijn van de zijrivieren van de Paraná. Het meeste sediment is afkomstig van de
+            Bermejo rivier. Het sediment wordt getransporteerd door de Paraná rivier en op de kusten afgezet. Dit
+            gebeurt onder invloed van de Uruguay rivier.
+        </p>
+    </div>
+
+    <!-- Ecologie -->
+
+    <div class="ecologie-tekst-parana">
+        <h2 class="ecologie-parana">Ecologie</h2>
+        <p>
+            De delta van de Paraná rivier is een van de grootste <em>‘coastal wetland’</em> systemen van Argentinië
+            (22.587 km<sup>2</sup>).
+            Coastal wetlands omvatten alle wetlands in kustwateren, het hele gebied van waaruit de getijdenstromen naar
+            de oceaan of binnenzeeën afvloeien. <b>Wetlands</b> zijn landen die verzadigd zijn met water en waar planten
+            voor
+            komen die natte bodems en een laag zuurstofgehalte bij de wortels kunnen verdragen.
+        </p>
+        <p>
+            Naast wetlands, beschikt de delta ook over een rijke biodiversiteit en natuurlijke hulpbronnen. De Paraná
+            delta levert vanuit een regionaal perspectief belangrijke ecosysteemdiensten- en goederen.
+        </p>
+        <h3>Biodiversiteit</h3>
+        <p>
+            De rijke biodiversiteit in het deltagebied helpt om de voedingsstoffen en sedimenten vast te houden, het
+            water te zuiveren (het verwijderen van stikstof, fosfor en andere chemicaliën) en koolstofdioxide vast te
+            houden. Daarnaast draag de biodiversiteit ook bij aan de stabilisatie van de kustlijn. Hierdoor wordt het
+            land beschermd tegen stormvloeden, golven, winden en andere klimatologische omstandigheden. Het onderste
+            deel van de delta beschermt het land ook tegen <em>Sudestadas</em>. Sudestada is de Argentijnse naam voor de
+            sterke
+            zuidoostelijke winden die over het estuarium van Río de la Plata waaien. Tijdens deze winden stijgt het
+            waterpeil en zullen de laaggelegen gebieden langs de rechter oever (inclusief Buenos Aires en de
+            buitenwijken) getroffen worden door overstromingen. 0,4 hectare wetland kan 6000 m<sup>3</sup>
+            overstromingswater opvangen zonder hulp van constructies.
+        </p>
+        <p>
+            Het deltagebied biedt onder andere voedsel, onderdak en broedplaatsen voor veel soorten (trek)vissen,
+            verschillende soorten vogels, reptielen en zoogdieren. Soorten die er voor komen zijn: de capibara, de
+            langstaartotter, het moerashert en de jaguar. Ook is het een belangrijk gebied voor sommige
+            bedreigde diersoorten die op de Rode Lijst van het IUCN staan, zoals het Moerasdikbekje (Sporophila
+            palustris). Meer dan 80% van het oppervlak is bedekt met kruidachtige plantgemeenschappen. De meeste zijn
+            zeer productief, hierbij wordt er koolstof vastgelegd in de bodem. Ook worden er voedergewassen voor vee en
+            soorten die er in het wild leven geproduceerd. In het middelste en onderste gedeelte van het gebied bestaat
+            meer dan 10% uit ondiepe meren. Deze meren bieden een leefgebied voor een aantal wilde diersoorten, dit zijn
+            met name (trek)vogels. Ongeveer 4% van het deltagebied bestaat uit inheemse bossen. Deze bevinden zich op de
+            minder voedselrijke plaatsen, zoals dijken.
+        </p>
+        <h3>De delta en verstedelijking</h3>
+        <p>
+            Helaas wordt de delta geconfronteerd met de druk van stedelijke groei, klimaatverandering en niet-duurzame
+            landbouwpraktijken. Het originele ecosysteem, zeker in het onderste deel van de delta, is erg veranderd door
+            verschillende factoren. Denk hierbij aan ontbossing, visserij, de introductie van uitheemse plantensoorten,
+            binnenlandse en industriële vervuiling.
+        </p>
+        <p>
+            Op dit moment is de Parana-delta het middelpunt van nationale en internationale beschermingsacties. Er zijn
+            verschillende beschermde gebieden, nationale parken (bijv. het Predelta National Park) en een
+            biosfeerreservaat (Paraná Delta Biosphere Reserve) van 886 km<sup>2</sup>. Dit biosfeerreservaat is
+            onderdeel van het
+            UNESCO Man and Biosphere programma.
+        </p>
+        <h3>Predelta National Park</h3>
+        <p>
+            Het Predelta National Park ligt aan het begin van de delta. Het heeft een oppervlakte van ongeveer 24
+            km<sup>2</sup>.
+            In dit gebied begint het sediment van de Paraná rivier de eilanden te vormen. In het nationale park komen
+            456 plantsoorten voor, 256 vogelsoorten, 185 vissoorten, 30 reptielsoorten en 30 zoogdiersoorten voor. Een
+            bekende boom die er voorkomt is de Ceibo. Dit is de nationale boom van Argentinië. De bloem van de boom is
+            de nationale bloem van Argentinië en Uruguay. Rondom de meertjes komen planten voor zoals de Achira.
+        </p>
+        <p>
+            In onderstaande afbeelding zijn een paar plant- en diersoorten afgebeeld die voorkomen in het gebied. In de
+            kaart is aangegeven waar het nationale park ligt.
+        </p>
+    </div>
+    <div class="ecologie-fotos">
+        <div class="biodiversiteit-afb">
+            <img class="biodiversiteit-afbeelding" src="media/ecologie_Tekengebied 1.svg"
+                alt="afbeelding met 3 dierensoorten (jaguar, moerashert en capibara) en 3 plantsoorten (ceibo, ceibobloem en Achira) erop">
+        </div>
+        <div class="embed-container">
+            <iframe width="750" height="590" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                title="predelta np"
+                src="//aereshogeschool.maps.arcgis.com/apps/Embed/index.html?webmap=b91f9e34035846c2940d95473543c3f3&extent=-61.0596,-32.3547,-60.1731,-31.8626&home=true&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe>
+        </div>
+    </div>
+
+    <!-- Stedelijke ontwikkeling -->
+    <div class="stedelijke-ontwikkeling-tekst-parana">
+        <h2 class="stedelijke-ontwikkeling-parana">Stedelijke ontwikkeling</h2>
+        <p>
+            Langs de waterkant van de Paraná delta bevindt zich een netwerk van allerlei steden. Al deze steden hebben
+            op verschillende manieren invloed op de delta. Op grootstedelijk niveau zijn er vier stedelijke
+            agglomeraties te onderscheiden:
+        </p>
+        <p><b>- Groot Buenos Aires</b>, met een populatie van ongeveer 13 miljoen inwoners;</p>
+        <p><b>- Rosario</b>, met een populatie van meer dan 1,2 miljoen inwoners;</p>
+        <p><b>- La Plata City</b>, met een populatie van ongeveer 700 duizend inwoners;</p>
+        <p><b>- Santa Fe</b>, met een populatie van ongeveer 500 duizend inwoners.</p>
+        <p>
+            Het belang van de delta hangt samen met de strategische ligging ervan. Het ligt namelijk langs de
+            belangrijkste economische route van het land. Deze route is ook een onderdeel van het Mercosur verdrag, die
+            de stad Santiago (Chili) met São Paulo (Brazilië) verbindt. Het onderste deel van de delta wordt beïnvloed
+            door de stedelijke ontwikkeling van Buenos Aires, die maar blijft groeien. In de metropoolregio woont 31%
+            van de nationale bevolking, terwijl de oppervlakte van deze regio uit minder dan 1% bestaat van heel
+            Argentinië.
+        </p>
+        <h3>Eerste bewoning van de delta</h3>
+        <p>
+            Voor de Spaanse kolonisatie, werd de delta en de kust van het estuarium bewoond door de inheemse bevolking.
+            Buenos Aires is gesticht door de Spanjaarden in 1536, aan de oever van de Rio de la Plata. Hoewel de stad
+            niet direct contact had met de delta, werd deze plek gekozen vanwege de Paraná rivier. Dit was de
+            belangrijkste vaarroute naar Paraguay.
+        </p>
+        <p>
+            Jaren later werden de eilanden van het onderste gedeelte bewoond door Europeanen. Deze nederzettingen waren
+            ongepland, verspreid en moeilijk toegankelijk doordat het gebrek aan infrastructuur. De Europeanen deden aan
+            fruitteelt en kapten de bossen. Pas aan het einde van de 19e eeuw werden de gronden in de delta gemeten en
+            wettelijk verdeeld. Hierbij is zo’n 55% in bezit gekomen van particuliere eigenaren.
+        </p>
+        <h3>Groei Buenos Aires</h3>
+        <p>
+            Vanaf het midden van de 19e eeuw is Buenos Aires snel gegroeid als metropoolregio. Dit kwam met name doordat
+            Buenos Aires mee ging doen in de internationale markt. De Britten hadden een grote vraag naar grondstoffen
+            en voedsel. Dit leidde tot de groei van de haven en de stad zelf. De economische ontwikkeling was mogelijk
+            door de nationale industrialisering die plaats vond in het midden van de 20e eeuw. De industrialisatie had
+            een grote invloed op het onderste deel van de delta door de toenemende productie en de bosbouw die steeds
+            belangrijker werd. De nieuwe actoren in de delta werden hierdoor grote bedrijven en/of rijke ondernemers.
+        </p>
+        <p>
+            In het laatste kwart van de 20e eeuw waren er veel structurele politieke en economische veranderingen, zoals
+            staathervorming, economische deregulering, aanleg van vervoersinfrastructuur en nieuwe stadswetten. Doordat
+            de staat zich terug trok als regulator van de ruimtelijke ordening, kwamen er buitenlandse investeerders om
+            de particuliere stedelijke ontwikkeling te financieren. In de delta ontstonden hierdoor ‘gated communities’.
+            Dit zijn woonwijken waarvan de in-en uitgangen afgesloten zijn en zo de woonwijk geïsoleerd is van de rest
+            van de stad. Deze geprivatiseerde woonwijken waren gericht op de middenklasse en hogere-inkomensgroepen. In
+            de periode van 1995 tot 2000 is het aantal gated communities toegenomen van 100 naar 350. Nu zijn het er
+            meer dan 400.
+        </p>
+        <p>
+            In 2001 ontstond er een nationale politieke en sociaaleconomische crisis, dit leidde tot veel werkloosheid
+            en een toename in het aantal sloppenwijken <em>(villas of asentamientos)</em>. Deze nederzettingen worden
+            bewoond door de lagere sociaaleconomische bevolkingsgroep. Hierdoor is er sociale ongelijkheid ontstaan.
+        </p>
+        <p>
+            De particuliere verhuurders beschermen hun percelen door zelf dijken of taluds aan te leggen, dit omdat er
+            geen openbare waterkering is. Deze dijken kunnen een negatieve invloed hebben op de omliggende omgeving, die
+            wel onder het overstromingsniveau blijven liggen.
+        </p>
+    </div>
+    <div class="stedelijke-ontwikkeling-fotos">
+        <div class="groei-buenos-aires">
+            <img class="buenos-aires" src="media/groeibuenosaires.png" alt="groei van Buenos Aires in de periode van 1880 tot 2001">
+            <p style="font-size: 12px">Groei van Buenos Aires als stad tussen 1880 en 2001 op een kaart</p>
+        </div>
+        <div class="populatie-buenos-aires">
+                <iframe title="Populatie Buenos Aires 1950-2035" aria-label="Interactive line chart" id="datawrapper-chart-g1sWk" src="//datawrapper.dwcdn.net/g1sWk/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="570"></iframe>
+                <script src="js/parana/datawrapper.js" type="text/javascript"></script>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-tekst"><a>&copy; Yolan Bottema</a></p>
+        <p class="footer-tekst"><a>2GMD, Aeres Hogeschool Almere</a></p>
+        <p class="footer-tekst"><a class="bronnen" href="bronnen.html">Bronnen</a></p>
+        <p class="footer-tekst"><a>2020</a>
+    </footer>
+</body>
+
+</html>
