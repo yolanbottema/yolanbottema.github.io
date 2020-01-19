@@ -1,83 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Informatie over de Yangtze delta en de Paraná delta">
-  <meta name="keywords" content="yangtze, paraná, shanghai, buenos aires, delta, estuarium, wetland, klimaat, ecologie, rivier, china, argentinië, biodiversiteit, urban, geomorfologie">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/stijl.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/ea176faa6e.js" crossorigin="anonymous"></script>
-  <title>Homepage</title>
+    <title>Urban Delta's Indus & Mississippi</title>
+    <link href="//db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Index.css">
+
+    <style>
+        /*green: #b4daa2
+blue: #0097ac
+Heading-fonts: 
+text-font: Acumin Variable Concept
+*/
+
+        body {
+            font-family: 'Acumin Variable Concept', Arial;
+            font-size: 22px;
+            background: linear-gradient(to bottom right, #b4daa2 0%, #0097ac 100%);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Acumin Variable Concept', Arial
+        }
+
+
+
+        h2,
+        blockquote {
+            border: none;
+            margin: 0px;
+            position: relative;
+            display: block;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: black; text-shadow: 2px 2px 5px white;
+        }
+
+        div.container {
+            text-shadow: 2px 2px 5px white;
+        }
+
+        a.Logo {
+            border: none;
+            position: relative;
+            padding: 0%;
+            margin-top: 20%;
+            margin-left: 30%;
+        }
+
+        .IndusSunset {
+            border: none;
+            margin: 0px;
+            position: relative;
+            display: block;
+            float: right;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .MississippiBridge {
+            border: none;
+            margin: 0px;
+            position: relative;
+            display: block;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        div.Missi {
+            border: none;
+            margin: 15%;
+            margin-top: 0%;
+            position: relative;
+            display: block;
+            float: left;
+            width: 70%;
+            box-sizing: border-box;
+            background-color: #a2dce9;
+            padding: 2em;
+        }
+
+        div.Missi img {
+            float: left;
+        }
+
+        div.Missi h1,
+        p {
+            margin-left: 0%;
+        }
+
+        div.Indus {
+            border: none;
+            margin: 15%;
+            position: relative;
+            display: block;
+            float: left;
+            width: 70%;
+            box-sizing: border-box;
+            background-color: #A0D5B4;
+            padding: 2em
+        }
+
+        div.Indus img {
+            float: right
+        }
+
+        div.Indus p {
+            margin-right: 0%;
+        }
+
+
+        div.About {
+            border: solid white;
+            background-color: white;
+            margin: 0px;
+            position: relative;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+        }
+
+        .About p {
+            margin: 1em;
+            font-size: small;
+        }
+
+        div.Black {
+            border: solid;
+            background-color: black;
+            margin: 0px;
+            position: relative;
+            display: block;
+            float: left;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .Black p {
+            margin: 0.5em;
+            font-size: small;
+            color: white
+        }
+    </style>
 </head>
 
-<body class="achtergrond-homepage">
-  <!-- Header -->
-  <div class="header">
-    <a href="index.html"><img class="logo" src="media/logo2.svg" alt="logo" /></a>
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox" class="show-menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
+<body>
 
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="yangtzedelta.html">Yangtze</a></li>
-      <li><a href="paranadelta.html">Paraná</a></li>
-      <li><a href="vergelijking.html">Vergelijking</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="over.html">Over</a></li>
-
-      <label for="checkbox" class="hide-menu-btn">
-        <i class="fas fa-times"></i>
-      </label>
+    <ul>
+        <li><a class="Logo"><img src="Logo4.png"></a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="Indus.html">Indus</a></li>
+        <li><a href="Mississippi.html">Mississippi</a></li>
+        <li><a href="Kaarten.html">Kaarten</a></li>
     </ul>
-  </div>
 
-  <!-- Homepage -->
-  <section id="homepage">
-    <h1>Urban Delta's</h1>
-    <h2>De wondere wereld van de delta's</h2>
-    <p>
-      Overal ter wereld hebben delta’s voor nederzettingen gezorgd. Denk aan steden zoals Shanghai bij de Yangtze delta
-      en Buenos Aires bij de Paraná delta.
-    </p>
-    <p>
-      Leer nu meer over de Yangtze delta en de Paraná delta!
-    </p>
+    <div class="container">
+        <img src="MississippiLakeItasca.jpg" alt="MississippiLake" style="width:100%;">
+        <div class="centered maintitle">Urban Delta's<br>Indus & Mississippi</div>
 
-    <div class="knop">
-      <a href="#delta" class="button">Ontdek de delta's!</a>
     </div>
-  </section>
 
-  <section id="delta">
-    <div class="deltas">
-      <div class="delta1">
-        <a href="yangtzedelta.html"><img class="yangtze-responsive" src="media/yangtze-delta.svg"
-            alt="illustratie van de yangtze delta" /></a>
-      </div>
-      <div class="delta2">
-        <a href="paranadelta.html"><img class="parana-responsive" src="media/parana-delta.svg"
-            alt="illustratie van de parana delta" /></a>
-      </div>
+
+    <div class="Indus">
+        <img src="IndusSunsetPalmtree.jpg" alt="Indus" width="60%" height="60%">
+        <h1><a href="Indus.html">- Indus -</a></h1><br>
+        <p>Pakistan</p><br>
     </div>
-    <p class="keuze">Druk op één van de illustraties om meer te weten te komen over de delta's</p>
-  </section>
+
+
+    <div class="Missi">
+        <img src="MississippiBridge2.jpg" alt="Mississippi" width="60%" height="60%">
+        <h1><a href="Mississippi.html">- Mississippi -</a></h1><br>
+        <p>United States</p><br>
+    </div>
 
 
 
+    <div class="About">
+        <h4>About Me</h4>
+        <p>Hallo, ik ben Merit een studente die voor de opleiding Geo Media & Design deze website heb gemaakt. Deze
+            opleiding doe ik op het Aeres dit is een Hogeschool in Almere.</p>
+    </div>
 
-  <!-- Footer -->
-
-  <footer>
-      <p class="footer-tekst1"><a>&copy; Yolan Bottema</a></p>
-      <p class="footer-tekst1"><a>2GMD, Aeres Hogeschool Almere</a></p>
-      <p class="footer-tekst1"><a class="bronnen" href="bronnen.html">Bronnen</a></p>
-      <p class="footer-tekst1"><a>2020</a>
-  </footer>
+    <div class="Black">
+        <p>Copyright</p>
+    </div>
 
 </body>
 
