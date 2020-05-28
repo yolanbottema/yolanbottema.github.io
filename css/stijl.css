@@ -481,6 +481,11 @@ tr:nth-child(even) {
     /* column-gap: 10px; */
 }
 
+.link{
+    text-decoration: none;
+    color: #05529d;
+    border-bottom: 3px solid #DA1B83;
+}
 .overmij>div{
     overflow: hidden;
     position: relative;
